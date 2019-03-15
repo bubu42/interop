@@ -46,7 +46,9 @@ public class search {
         try {
            // curl --data "query=Who is the wife of Barack Obama" http://qanswer-core1.univ-st-etienne.fr/api/gerbil
             // search "children barack obama" to have several Qids
-            String command = "curl --data \"query=" + query + "\" http://qanswer-core1.univ-st-etienne.fr/api/gerbil";
+            System.out.println(query);
+            String command = "curl --data \"query=" + query + "\" --data \"kb=students\" -H 'authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5MCIsImlhdCI6MTU1MjY0NTQ2NiwiZXhwIjoxNTUzMjUwMjY2fQ.8c7G2LxKtaL98jMIBxeRWSXjDCII22g-kCD6KHGU_0uqpT7xtOMF8F4WnS4An5KNErLCFRrbNYQV2XY2bBkz3w' http://qanswer-core1.univ-st-etienne.fr/api/gerbil";
+           System.out.println("query :" +query);
             Process process = Runtime.getRuntime().exec(command);
             
             
