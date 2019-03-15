@@ -1,0 +1,110 @@
+-----------------*/
+*,*:after,*:before {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+
+body {
+  
+  color: #fff;
+  font:12px/18px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  background-image:url(../img/fond.jpg);
+  
+}
+a,a:visited {
+  color:#fff
+}
+#res{
+    
+    color: #000;
+    
+  left: 45%;
+  padding: 8px 80px;
+  position: absolute;
+  margin: 27px 0 0 -170px;
+  top: 29%;
+  padding-right: 37px;
+    
+}
+
+/*--------------------------------------------------------------
+2.0 - SEARCH FORM
+--------------------------------------------------------------*/
+.searchform {
+  background:rgba(244,244,244,.79);
+  border: 1px solid #d3d3d3;
+  left: 45%;
+  padding: 8px 80px;
+  position: absolute;
+  margin: 27px 0 0 -170px;
+  top: 29%;
+  width: 500px;
+  -webkit-box-shadow:0 4px 9px rgba(0,0,0,.37);
+  -webkit-border-radius: 10px;
+  padding-right: 37px;
+}
+
+.searchform input, .searchform button {
+	float: left
+}
+.searchform input {
+	background:#fefefe;
+	border: none;
+	font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	margin-right: 9px;
+	padding: 19px;
+	width: 460px;
+	box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+	margin-left: -66px;
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+}
+	.searchform input:focus {
+		outline: none;
+		box-shadow:0 0 4px #0d76be inset;
+		-moz-box-shadow:0 0 4px #0d76be inset;
+		-webkit-box-shadow:0 0 4px #0d76be inset;
+	}
+	.searchform input::-webkit-input-placeholder {
+  	font-style: italic;
+  	line-height: 15px
+	}
+
+	.searchform input:-moz-placeholder {
+	  font-style: italic;
+  	line-height: 15px
+	}
+
+.searchform button {
+	border: none;
+	color:#fff;
+	cursor: pointer;
+	font: 13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	padding: 19px;
+	width: 123px;
+	border-radius: 9px;
+	background-color:rgba(7, 22, 252, 0.8);
+	-webkit-border-radius: 9px;
+	margin-right: -27px;
+}
+	.searchform button:hover {
+		opacity:.9;
+	}
+
+	.search-result-form{
+		text-align: center;
+margin-top: 50px;
+	}
